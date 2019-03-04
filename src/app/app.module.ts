@@ -7,6 +7,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
+import { MatTableModule } from '@angular/material';
+import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator'; 
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -38,6 +41,9 @@ import { RecepcionComponent } from './componentes/recepcion/recepcion.component'
     MatToolbarModule,
     MatCardModule, 
     MatFormFieldModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
 
     AppRoutingModule
   ],
