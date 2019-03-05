@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecepcionComponent implements OnInit {
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', 'symbol2', 'symbol3'];
+  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
 
   constructor() { }

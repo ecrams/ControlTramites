@@ -7,9 +7,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
+
 import { MatTableModule } from '@angular/material';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator'; 
+import {MatDatepickerModule} from '@angular/material';
+import {  MatNativeDateModule} from '@angular/material';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -45,9 +48,18 @@ import { RecepcionComponent } from './componentes/recepcion/recepcion.component'
     MatSortModule,
     MatPaginatorModule,
 
+    MatDatepickerModule,
+
     AppRoutingModule
   ],
-  providers: [],
+  exports: [
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    MatInputModule,
+    BrowserAnimationsModule
+  ],
+  providers: [MatDatepickerModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
