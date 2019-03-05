@@ -1,4 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewChild} from '@angular/core';
+import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
+
+
+
+
+export interface UserData {
+  id: string;
+  name: string;
+  progress: string;
+  color: string;
+}
+
+
+
 
 @Component({
   selector: 'app-recepcion',
@@ -7,14 +22,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecepcionComponent implements OnInit {
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = ELEMENT_DATA;
 
+ 
+
+
+
+
+  foods: Food[] = [
+    {value: 'steak-0', viewValue: 'DANIELA VALDEZ'},
+    {value: 'pizza-1', viewValue: 'JUAN PEREZ PEREZ'},
+    {value: 'tacos-2', viewValue: 'RODRIGO LIMA CAMACHO'}
+  ];
+
+  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  //dataSource = ELEMENT_DATA;
+  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  
   constructor() { }
 
   ngOnInit() {
+    this.dataSource.paginator = this.paginator;
+
   }
 
+}
+
+export interface Food {
+  value: string;
+  viewValue: string;
 }
 
 

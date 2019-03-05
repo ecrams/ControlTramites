@@ -5,7 +5,7 @@
 
 
   <mat-form-field>
-    <mat-select placeholder="usuarios">
+    <mat-select placeholder="Usuario">
       <mat-option *ngFor="let food of foods" [value]="food.value">
         {{food.viewValue}}
       </mat-option>
@@ -22,9 +22,8 @@
 
   
   
-
-
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+<div> 
+   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
       <!--- Note that these columns can be defined in any order.
             The actual rendered columns are set as a property on the row definition" -->
@@ -75,5 +74,12 @@
      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
-    
-    
+
+    <mat-paginator [length]="100"
+              [pageSize]="5"
+              [pageSizeOptions]="[5, 10, 25, 100]">
+</mat-paginator>
+
+
+
+  </div>

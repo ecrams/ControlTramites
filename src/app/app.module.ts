@@ -14,6 +14,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import {MatDatepickerModule} from '@angular/material';
 import {  MatNativeDateModule} from '@angular/material';
 
+import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
+
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
