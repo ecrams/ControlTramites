@@ -22,6 +22,11 @@ export interface UserData {
 })
 export class RecepcionComponent implements OnInit {
 
+  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  //dataSource = ELEMENT_DATA;
+  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  
 
  
 
@@ -34,10 +39,7 @@ export class RecepcionComponent implements OnInit {
     {value: 'tacos-2', viewValue: 'RODRIGO LIMA CAMACHO'}
   ];
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  //dataSource = ELEMENT_DATA;
-  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
-  @ViewChild(MatPaginator) paginator: MatPaginator;
+
   
   constructor() { }
 

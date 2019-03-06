@@ -27,12 +27,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { RecepcionComponent } from './componentes/recepcion/recepcion.component';
+import { RevisionComponent } from './componentes/revision/revision.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RecepcionComponent
+    RecepcionComponent,
+    RevisionComponent
   ],
   imports: [
     BrowserModule,
