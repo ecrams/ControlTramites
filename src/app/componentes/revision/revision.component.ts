@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 
 import { ViewChild} from '@angular/core';
 import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
-
+import {MatDialog, MatDialogConfig} from '@angular/material';
 
 
 
@@ -11,6 +11,8 @@ import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
   templateUrl: './revision.component.html',
   styleUrls: ['./revision.component.scss']
 })
+
+
 export class RevisionComponent implements OnInit {
 
 
@@ -21,12 +23,26 @@ export class RevisionComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   
 
-  constructor() {
+  constructor( private dialog: MatDialog) {
    }
+
+   
+
+  
 
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
   }
+
+
+
+  openDialog(){
+   /* const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = true;
+  this.dialog.open(LoginComponent);
+*/  
+}
+
 
 }
 

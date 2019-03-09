@@ -64,6 +64,7 @@ import { RevisionComponent } from './componentes/revision/revision.component';
     BrowserAnimationsModule
   ],
   providers: [MatDatepickerModule],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[]
 })
 export class AppModule { }
