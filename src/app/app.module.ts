@@ -28,13 +28,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { RecepcionComponent } from './componentes/recepcion/recepcion.component';
 import { RevisionComponent } from './componentes/revision/revision.component';
+import { ObservacionComponent } from './componentes/observacion/observacion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RecepcionComponent,
-    RevisionComponent
+    RevisionComponent,
+    ObservacionComponent
   ],
   imports: [
     BrowserModule,
