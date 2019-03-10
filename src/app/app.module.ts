@@ -29,6 +29,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { RecepcionComponent } from './componentes/recepcion/recepcion.component';
 import { RevisionComponent } from './componentes/revision/revision.component';
 import { ObservacionComponent } from './componentes/observacion/observacion.component';
+import { PrincipalComponent } from './principal/principal.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ObservacionComponent } from './componentes/observacion/observacion.comp
     LoginComponent,
     RecepcionComponent,
     RevisionComponent,
-    ObservacionComponent
+    ObservacionComponent,
+    PrincipalComponent
   ],
   imports: [
     BrowserModule,
