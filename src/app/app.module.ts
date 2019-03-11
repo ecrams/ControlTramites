@@ -7,6 +7,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
+import {MatSidenavModule }from '@angular/material';
+import {MatListModule} from '@angular/material';
+
 
 import { MatTableModule } from '@angular/material';
 import { MatSortModule } from '@angular/material/sort';
